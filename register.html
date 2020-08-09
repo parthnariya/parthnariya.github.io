@@ -2,6 +2,12 @@
 <html>
     <head>
         <link  rel = "stylesheet" type = "text/css" href="addItemStyle.css"/>
+        <script LANGUAGE="JavaScript" type="text/javascript">
+            function display() {
+                var name = document.getElementById("username").value;
+                alert("welcome "+name); 
+            }
+        </script>
     </head>
     <body>
         <form>
@@ -25,7 +31,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" align="center">
-                            <button type="submit" >Create</button>
+                            <button type="submit" onclick="display();" >Create</button>
                         </td>
                     </tr>
                 </tbody>
