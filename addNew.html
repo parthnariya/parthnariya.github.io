@@ -2,6 +2,12 @@
 <html>
     <head>
         <link  rel = "stylesheet" type = "text/css" href="addItemStyle.css"/>
+        <script LANGUAGE="JavaScript" type="text/javascript">
+            function display() {
+                var iname = document.getElementsByName("iname").value;
+                alert("added "+ iname); 
+            }
+        </script>
     </head>
     <body>
             <form>
@@ -9,7 +15,7 @@
                     <tbody>
                         <tr>
                             <td>name:-</td>
-                            <td><input type="text" name="iname"></td>
+                            <td><input type="text" name="iname" ></td>
                         </tr>
                         <tr>
                             <td>price:-</td>
@@ -22,7 +28,7 @@
                     </tbody>
                     <tr>
                         <td colspan="4" align="left">
-                            <button type="submit">Add</button>
+                            <button type="submit" onclick="display();">Add</button>
                         </td>
                     </tr>
                 </table>
