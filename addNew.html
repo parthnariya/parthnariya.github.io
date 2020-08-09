@@ -4,7 +4,7 @@
         <link  rel = "stylesheet" type = "text/css" href="addItemStyle.css"/>
         <script LANGUAGE="JavaScript" type="text/javascript">
             function display() {
-                var iname = document.getElementsByName("iname").value;
+                var iname = document.getElementsById("iname").value;
                 alert("added "+ iname); 
             }
         </script>
@@ -15,7 +15,7 @@
                     <tbody>
                         <tr>
                             <td>name:-</td>
-                            <td><input type="text" name="iname" ></td>
+                            <td><input type="text" name="iname" id="iname" ></td>
                         </tr>
                         <tr>
                             <td>price:-</td>
