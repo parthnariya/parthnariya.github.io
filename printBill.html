@@ -2,6 +2,11 @@
 <html>
     <head>
         <link  rel = "stylesheet" type = "text/css" href="StockManagerDesign.css"/>
+        <script LANGUAGE="JavaScript" type="text/javascript">
+            function display() {
+                alert("document sent to the printer "); 
+            }
+        </script>
     </head>
     <body>
         <form>
@@ -52,7 +57,7 @@
                 </tbody>
                 <tbody>
                     <tr>
-                        <td colspan="4"  ><button>Print</button></td>
+                        <td colspan="4"  ><button onclick="display();">Print</button></td>
                     </tr>
                 </tbody>
             </table>
